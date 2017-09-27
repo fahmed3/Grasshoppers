@@ -1,6 +1,6 @@
 <!--
-which will generate an HTML page with an appropriate title, a descriptive heading, and a tablified version of the occupations data, followed by a randomly selected occupation
-!-->
+    which will generate an HTML page with an appropriate title, a descriptive heading, and a tablified version of the occupations data, followed by a randomly selected occupation
+    !-->
 
 <!DOCTYPE html>
 <html>
@@ -9,12 +9,13 @@ which will generate an HTML page with an appropriate title, a descriptive headin
   </head>
   <body>
     <h1>Occupations and their Percentage in the U.S. Workforce</h1>
-    <table style = "width:100%">
+    <h2> <u> Weighted Random Selection:</u> {{one}}</h2>
+    <table border = 1 style = "width:50%">
       <tr>
 	<th>Occupation</th>
 	<th>Percentage</th>
       </tr>
-      { % for i in j % }
+      {% for i in j %}
       <tr>
 	<td> {{ i }} </td>
 	<td> {{ j[i] }} </td>

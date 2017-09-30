@@ -4,7 +4,7 @@
 #2017-09-27
 
 from flask import Flask, render_template
-import occupations
+from utils import occupations
 
 jobsite = Flask(__name__)
 
